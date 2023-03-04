@@ -7,10 +7,10 @@ This repository is for the Travel India track of HACKA-DEMIC hackathon and is ow
 Hi, Welcome to the Official documentation of the Travel India Website and Web app created by Team Error 404. Here, on this website, we have implemented the state wise toursim and covid dashboard to aware the travellers about the risks of being infected. This project will serve as a single place required to make the tour of a person comfortable and Memorable. Using this website a tourist/traveller can plan his/her trip in a better way. This project presents the culture and heritage of India in a unique way.
 
 ## Team Members
-1. Atman Das
-2. Snehasish Pati
-3. Yashraj Jain
-4. Arpan Mahato
+1. Shalu Verma
+2. Shakshi Shah
+3. 
+4. 
 
 ## Features
 This Project has lot of features to offer. Some of the top features are mentioned below:
@@ -44,12 +44,6 @@ This Project has lot of features to offer. Some of the top features are mentione
 14. Python
 15. Heroku
 16. Onesignal
-
-Our Website is Live at :
-[https://error404-travelindia.web.app/](https://error404-travelindia.web.app/)
-
-You can watch our project presentation at :
-[https://youtu.be/R9ZPa-jFb3Y](https://youtu.be/R9ZPa-jFb3Y)
 
 ## Future Implementations & Usage
 
