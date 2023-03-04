@@ -1,30 +1,18 @@
-# Travel-India
-
-This repository is for the Travel India track of HACKA-DEMIC hackathon and is owned by Team Error 404.
+# Travel-Guide
 
 ## Introduction
 
-Hi, Welcome to the Official documentation of the Travel India Website and Web app created by Team Error 404. Here, on this website, we have implemented the state wise toursim and covid dashboard to aware the travellers about the risks of being infected. This project will serve as a single place required to make the tour of a person comfortable and Memorable. Using this website a tourist/traveller can plan his/her trip in a better way. This project presents the culture and heritage of India in a unique way.
+Hi, Welcome to the Official documentation of the Travel Guide Website. Here, on this website, we have implemented the state wise toursim and covid dashboard to aware the travellers about the risks of being infected. This project will serve as a single place required to make the tour of a person comfortable and Memorable. Using this website a tourist/traveller can plan his/her trip in a better way. This project presents the culture and heritage of India in a unique way.
 
 ## Team Members
 1. Shalu Verma
 2. Shakshi Shah
-3. 
+3. Sanjeev
 4. 
 
 ## Features
 This Project has lot of features to offer. Some of the top features are mentioned below:
 
-##### -> Get the latest Covid-19 details of India and all the States along with covid guidelines.
-##### -> Featured destinations of India along with the rating, reviews, and location.
-##### -> 360° image view, which will help users to view the destinations before visiting.
-##### -> Have a Travel Assistant chatbot, which will help new users to get their required details at a click.
-##### -> 5 days weather forecast of India and its States implemented in the chatbot.
-##### -> Get Best offers on Hotels and Flights Booking or get the best Tourism Packages at a single place.
-##### -> Engaging users with Notifications
-##### -> Get List of Trending things of the specific destination.
-##### -> Responsive design for better experience in different devices.
-##### -> Make this a PWA.
 
 ## Technologies Used
 
