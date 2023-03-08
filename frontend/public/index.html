@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -19,41 +18,5 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger chat-icon="https://storage.googleapis.com/cloudprod-apiai/78400e69-e0a1-4ad4-b936-2d4dec5a20e1_x.png" intent="WELCOME" chat-title="Travel Assistant" agent-id="b026e6ec-0577-49fd-8bdd-948cd865ab88" language-code="en"></df-messenger>
-    <script>
-      $(document).ready(function () {
-        window.addEventListener('dfMessengerLoaded', function (event) {
-          $r1 = document.querySelector("df-messenger");
-          $r2 = $r1.shadowRoot.querySelector("df-messenger-chat");
-          $r3 = $r2.shadowRoot.querySelector("df-messenger-user-input");
-          var sheet = new CSSStyleSheet;
-          sheet.replaceSync(`div.chat-wrapper[opened="true"] { height: 450px }`);
-          $r2.shadowRoot.adoptedStyleSheets = [sheet];
-        });
-      });
-
-      // one signal for notifications
-      window.OneSignal = window.OneSignal || [];
-      OneSignal.push(function () {
-        OneSignal.init({
-          appId: "f0e8b56f-0856-4ef2-8c79-23fa673d50bc",
-        });
-      });
-
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function () {
-          navigator.serviceWorker.register('./worker.js').then(function (registration) {
-            console.log('Worker registration successful', registration.scope);
-          }, function (err) {
-            console.log('Worker registration failed', err);
-          }).catch(function (err) {
-            console.log(err);
-          });
-        });
-      } else {
-        console.log('Service Worker is not supported by browser.');
-      }
-    </script>
   </body>
-
 </html>

@@ -3,10 +3,6 @@ import StarRatingComponent from 'react-star-rating-component';
 import Navbar from './Navbar'
 import Footer from './Footer'
 
-import firebase from 'firebase/app'
-import 'firebase/database'
-import 'firebase/firestore'
-
 import { Carousel } from 'react-bootstrap'
 import top_places from '../assets/data/top_places.js'
 
@@ -20,15 +16,7 @@ function Page_Top_Place(props) {
     const onStarClick = (nextValue, prevValue, name) => {
         setRating(nextValue);
         // save();
-        firebase.firestore().collection('rating').doc(id).set({
-            id: id,
-            count: count + nextValue,
-            user: user + 1
-        }).then(() => {
-            localStorage.setItem(`${id + '_user'}`, `${user + 1}`);
-            localStorage.setItem(`${id + '_count'}`, `${count + nextValue}`);
-        })
-            .catch(err => console.log(err));
+        
     }
 
     let title = props.match.params.place;
@@ -50,11 +38,7 @@ function Page_Top_Place(props) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await firebase.database().ref('reviews').child(id).push({
-                name: name,
-                review: review,
-                time: new Date().toLocaleString('en-IN', { hourCycle: 'h24' })
-            });
+           
             setName('');
             setReview('');
         } catch (err) {
@@ -65,12 +49,7 @@ function Page_Top_Place(props) {
     // load review messages
     const loadMessages = () => {
         try {
-            firebase.database().ref('reviews').child(id).on('value', chats => {
-                if (chats.val() != null) {
-                    const values = Object.values(chats.val());
-                    setOldReviews(values);
-                }
-            })
+            
         }
         catch (error) {
             console.log(error.message);
