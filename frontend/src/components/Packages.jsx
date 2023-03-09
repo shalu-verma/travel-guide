@@ -1,7 +1,6 @@
 import React from "react";
-import "./Card_Bookings";
 import "../assets/css/bookings.css";
-import Card_Bookings from "./Card_Bookings";
+import CardBookings from "./CardBookings";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import packages from "../assets/data/packages";
@@ -16,7 +15,7 @@ const PackageBookings = () => {
       <div className="container mb-5">
         <div className="row mx-auto">
           {packages.map((data) => {
-            return <Card_Bookings data={data} />;
+            return <CardBookings data={data} />;
           })}
         </div>
       </div>

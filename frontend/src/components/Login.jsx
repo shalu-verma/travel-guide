@@ -50,7 +50,7 @@ function Login() {
         const { firstname, lastname, _id } = response;
         sessionStorage.setItem("loggedUserName", `${firstname} ${lastname}`);
         sessionStorage.setItem("loggedUserId", _id);
-        navigate.push("/home");
+        navigate.push("/");
       })
       .catch((error) => {
         setOpen(true);

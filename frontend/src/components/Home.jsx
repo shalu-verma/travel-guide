@@ -1,22 +1,15 @@
-import React, { useEffect, useState } from "react";
-import Chart from "chart.js";
+import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import hero_image from "../assets/img/hero_image.jpg";
 import hero_caption from "../assets/img/hero_caption.png";
 import flight from "../assets/img/Bookings/flight.jpg";
 import hotel from "../assets/img/Bookings/hotel.jpg";
 import pack from "../assets/img/Bookings/package.jpg";
 import "../assets/css/home.css";
-// import "../assets/css/covid.css"
 import StateCarousel from "./StateCarousel";
 import DestinationCarousel from "./DestinationCarousel";
 import FoodCarousel from "./FoodCarousel";
-// import Dashboard from './Dashboard'
-
-
 const Home = () => {
-  
   return (
     <>
       <Navbar />

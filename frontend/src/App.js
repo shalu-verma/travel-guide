@@ -9,9 +9,9 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/css/styles.css";
 // Components
-import Page_State from "./components/Page_State";
+import PageState from "./components/PageState";
 import Home from "./components/Home";
-import Page_Top_Place from "./components/Page_Top_Place";
+import PageTopPlace from "./components/PageTopPlace";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
@@ -42,16 +42,16 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          <ProtectedRoute exact path="/states/:state" component={Page_State} />
+          <ProtectedRoute exact path="/states/:state" component={PageState} />
           <ProtectedRoute
             exact
             path="/top-places/:place"
-            component={Page_Top_Place}
+            component={PageTopPlace}
           />
           <ProtectedRoute
             exact
             path="/top-places/:place"
-            component={Page_Top_Place}
+            component={PageTopPlace}
           />
           <ProtectedRoute exact path="/book-hotels" component={HotelBookings} />
           <ProtectedRoute

@@ -1,22 +1,29 @@
-import React from "react";
-import "./Card_Bookings";
+import React, { useState } from "react";
+import "./CardBookings";
 import "../assets/css/bookings.css";
-import Card_Bookings from "./Card_Bookings";
+import CardBookings from "./CardBookings";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import hotels from "../assets/data/hotels";
+import axios from "axios";
 
+const serverBase = "http://localhost:5000";
 const HotelBookings = () => {
+  const [hotelsData, setHotelData] = useState([]);
+
+  axios.get(`${serverBase}/hotels/list`).then((response) => {
+    setHotelData(response.data);
+  });
+
   return (
     <>
       <Navbar />
       <h1 className="section-heading" style={{ marginTop: "80px" }}>
-        Best Deals{" "}
+        Best Deals
       </h1>
       <div className="container mb-5">
         <div className="row mx-auto">
-          {hotels.map((data) => {
-            return <Card_Bookings data={data} />;
+          {hotelsData.map((data) => {
+            return <CardBookings data={data} />;
           })}
         </div>
       </div>

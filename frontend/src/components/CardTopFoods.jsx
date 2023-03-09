@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card_Top_Foods(props) {
+function CardTopFoods(props) {
     return (
         <div className="col-12 col-sm-6 col-md-4 mx-auto mt-3">
             <div className="card">
@@ -16,4 +16,4 @@ function Card_Top_Foods(props) {
     )
 }
 
-export default Card_Top_Foods
+export default CardTopFoods

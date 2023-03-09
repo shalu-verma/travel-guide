@@ -3,7 +3,7 @@ import StarRatingComponent from 'react-star-rating-component';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
-function Card_Top_Places(props) {
+function CardTopPlaces(props) {
     let title = props.place.cardTitle.replace(/[^a-zA-Z ]/g, "");
     let id = title.replace(/\s+/g, "");
     let count = localStorage.getItem(`${id + '_count'}`);
@@ -40,4 +40,4 @@ function Card_Top_Places(props) {
     )
 }
 
-export default Card_Top_Places
+export default CardTopPlaces

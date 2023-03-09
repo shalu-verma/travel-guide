@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Carousel from 'react-elastic-carousel'
 import { Link } from 'react-router-dom'
 import chena_poda from '../assets/img/odisha/chena_poda.jpg'
 import galouti_kebab from '../assets/img/utter_pradesh/galouti_kebab.jpg'
 import chole_bhature from '../assets/img/delhi/chole_bhature.jpg'
 import laal_maas from '../assets/img/rajasthan/laal_maas.jpg'
-//import chena_poda from '../Assets/images/food/chena_poda.jpg'
-//import  from '../Assets/images/taj_mahal.jpg'
+
+
 function FoodCarousel() {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -51,15 +51,6 @@ function FoodCarousel() {
           </div>
         </div>
       </Link>
-      {/* <Link className="px-3 nav-link state" to="/">
-        <div className="card" >
-          <img src={red_fort} className="card-img-top" alt="..." />
-          <div className="card-body top-state-body">
-            <h2>State 5</h2>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-      </Link> */}
 
     </Carousel>
   )
